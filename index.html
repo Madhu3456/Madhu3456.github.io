@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple, clean, and mobile-friendly static blog hosted on GitHub Pages.">
+  <meta name="author" content="Blog Author">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="My Blog">
+  <meta property="og:description" content="A simple, clean, and mobile-friendly static blog.">
+  
+  <title>My Blog</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">
+        <a href="index.html">My Blog</a>
+      </h1>
+      <p class="site-tagline">Thoughts, stories, and ideas</p>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <h2 class="sr-only">Blog Posts</h2>
+      
+      <!-- Posts will be loaded here by JavaScript -->
+      <div id="posts-container" class="posts-list">
+        <!-- Loading state -->
+        <div class="empty-state" id="loading-state">
+          <p>Loading posts...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 My Blog. Built with ❤️ for GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for loading posts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
